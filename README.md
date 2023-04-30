@@ -33,9 +33,40 @@ Amazon API Gateway is a fully managed service provided by Amazon Web Services (A
 create, publish, maintain, monitor, and secure APIs at any scale. It acts as a front door for applications to access
 data, logic, or functionality from backend services and applications.
 
+### S3
+
+Amazon S3 (Simple Storage Service) is a highly scalable, secure, and durable object storage service provided by Amazon
+Web Services (AWS). It allows users to store and retrieve any amount of data from anywhere on the web. S3 provides
+object-level storage, which means that data is stored in objects, such as files or images, within buckets. A bucket is a
+container for objects, similar to a folder in a file system.¬
+
+### Dataset
+
+http://files.grouplens.org/datasets/movielens/ml-100k.zip
+
+### Model
+
+It presents a scenario where a television application seeks to obtain forecasted ratings for a selection of films. When
+the application presents a page of movies to the user, it should prioritize the display of those movies with higher
+ratings predictions, making them more visible on the page. The scenario assumes that both users and movies are
+distinguishable by a numerical ID, and the predicted ratings are on a scale ranging from 1 to 5. A higher rating
+indicates a greater probability that a specific movie will be enjoyed by the user.
+
+This prediction model has the capability to predict the score of a movie based on the user's individual preferences.
+Essentially, the model is able to analyze a user's past behavior and movie preferences to determine the likelihood that
+they will enjoy a particular movie. By utilizing this user-based approach, the model can provide personalized
+recommendations to each user, which can lead to a more satisfying and enjoyable movie-watching experience. This type of
+personalized prediction model is becoming increasingly popular in the entertainment industry, as it allows companies to
+tailor their services to each individual user's preferences, ultimately leading to increased customer satisfaction and
+loyalty.
+
 ### Usage
 
 https://0rg8yrwjql.execute-api.us-east-1.amazonaws.com/test/predicted-ratings/321?items=101,131,162&
+
+```bash
+curl "https://0rg8yrwjql.execute-api.us-east-1.amazonaws.com/test/predicted-ratings/321?items=101,131,162&"
+```
 
 ### Inheritance
 
